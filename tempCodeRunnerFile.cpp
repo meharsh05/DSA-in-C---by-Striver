@@ -1,43 +1,14 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std; 
 
 int main(){
-    int day;
-    cout << "Enter the day no. : ";
-    cin >> day; 
+    string name = "Harsh";
+    int len = name.size();
 
-switch(day){
-    case 1:
-        cout << "Monday" << endl;
-        break;
+    name[len -1] = 's';
+    cout << name[len - 1];
 
-    case 2:
-        cout << "Tuesday" << endl;
-        break;
+    cout << name;
 
-    case 3:
-        cout << "Wednesday" << endl;
-        break;
-
-    case 4:
-        cout << "Thursday" << endl;
-        break;
-
-    case 5:
-        cout << "Friday" << endl;
-        break;
-
-    case 6:
-        cout << "Saturday" << endl;
-        break;
-
-    case 7:
-        cout << "Sunday" << endl;
-        break;
-
-    default:
-        cout << "Invalid" << endl;
-
-}
     return 0;
 }
