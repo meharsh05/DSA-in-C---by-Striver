@@ -2,27 +2,21 @@
 using namespace std; 
 
 int main(){
-    int marks;
-    cout << "Enter your marks : ";
-    cin>>marks;
+    int age;
+    cout << "Enter Your Age: ";
+    cin >> age;
 
-if(marks<25){
-    cout << "Fail" <<endl;
+if(age < 18){
+    cout << "Not eligible for job" << endl;
 }
-else if(marks <= 44){
-    cout << "E" << endl;
+else if(age <= 54){
+    cout << "Eligible for job" << endl;
 }
-else if(marks <= 49){
-    cout << "D" << endl;
+else if(age <= 57){
+    cout << "Eligible for job but retirement soon" << endl;
 }
-else if(marks <= 59){
-    cout << "C" << endl;
-}
-else if(marks <= 79){
-    cout << "B" << endl;
-}
-else if(marks <= 100){
-    cout << "A" << endl;
+else{
+    cout << "Retirement Soon" << endl;
 }
     
     return 0;

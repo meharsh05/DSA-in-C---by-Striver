@@ -75,3 +75,35 @@ else if(marks <= 100){
     
     return 0;
 }
+
+/*
+Ex. 3 - Take the age from user and then decide accordingly:
+1. If age < 18 -- print "Not eligible for job"
+2. If age >= 18 -- print "Eligible for job"
+3. If age >= 55 and age <= 57 -- print "Eligible for job but retirement soon"
+4. If age > 57 -- print "Retirement time"
+*/
+
+#include<bits/stdc++.h>
+using namespace std; 
+
+int main(){
+    int age;
+    cout << "Enter Your Age: ";
+    cin >> age;
+
+if(age < 18){
+    cout << "Not eligible for job" << endl;
+}
+else if(age <= 54){
+    cout << "Eligible for job" << endl;
+}
+else if(age <= 57){
+    cout << "Eligible for job but retirement soon" << endl;
+}
+else{
+    cout << "Retirement Time" << endl;
+}
+    
+    return 0;
+}
