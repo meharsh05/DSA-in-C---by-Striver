@@ -35,7 +35,8 @@ int main(){
     return 0;
 }
 
-/*
+/* 
+IF ELSE STATEMENT Prblm 
 E.x 2 - A school has following rules for grading system :
     Below 25 - Fail 
     25 - 44 -- E
@@ -77,6 +78,7 @@ else if(marks <= 100){
 }
 
 /*
+IF ELSE STATEMENT Prblm 
 Ex. 3 - Take the age from user and then decide accordingly:
 1. If age < 18 -- print "Not eligible for job"
 2. If age >= 18 -- print "Eligible for job"
