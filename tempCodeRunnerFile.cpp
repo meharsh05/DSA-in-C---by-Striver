@@ -1,10 +1,10 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std; 
 
-void print5(int n){
+void print6(int n){
     for(int i=0; i<n; i++){
         for(int j=1; j<n-i+1; j++){
-            cout << "* ";
+            cout << j << " ";
         }
         cout << endl;
     }
@@ -17,6 +17,6 @@ int main(){
     for(int i=0; i<t; i++){
         int n;
         cin>>n;
-        print5(n);
+        print6(n);
     }
 }
