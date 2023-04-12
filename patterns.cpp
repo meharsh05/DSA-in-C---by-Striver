@@ -1,5 +1,6 @@
 /*
-Pattern 1 - * * * *
+Pattern 1 -
+            * * * *
             * * * *
             * * * *
             * * * *
@@ -29,7 +30,8 @@ int main(){
 }
 
 /*
-Pattern 2 -  *
+Pattern 2 -  
+             *
              * *
              * * *
              * * * *
@@ -60,7 +62,8 @@ int main(){
 }
 
 /*
-Pattern 3 - 1
+Pattern 3 - 
+            1
             1 2
             1 2 3
             1 2 3 4
@@ -91,7 +94,8 @@ int main(){
 }
 
 /*
-Pattern 4 - 1
+Pattern 4 - 
+            1
             2 2
             3 3 3
             4 4 4 4 
@@ -118,5 +122,37 @@ int main(){
         int n;
         cin>>n;
         print4(n);
+    }
+}
+
+/*
+Pattern 5-  
+            * * * * *
+            * * * * 
+            * * * 
+            * * 
+            * 
+*/
+
+#include<bits/stdc++.h>
+using namespace std; 
+
+void print5(int n){
+    for(int i=1; i<=n; i++){
+        for(int j=0; j<n-i+1; j++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+int main(){
+    int t;
+    cout << "Enter the value for test cases: ";
+    cin>>t;
+
+    for(int i=0; i<t; i++){
+        int n;
+        cin>>n;
+        print5(n);
     }
 }
