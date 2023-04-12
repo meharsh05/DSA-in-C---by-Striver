@@ -1,14 +1,22 @@
 #include<iostream>
 using namespace std; 
 
+void print2(int n){
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << " * ";
+        }
+        cout << endl;
+    }
+}
 int main(){
-    string name = "Harsh";
-    int len = name.size();
+    int t;
+    cout << "Enter the value for test case to be run: ";
+    cin>>t;
 
-    name[len -1] = 's';
-    cout << name[len - 1];
-
-    cout << name;
-
-    return 0;
+    for(int i=0; i<t; i++){
+        int n;
+        cin>>n;
+        print2(n);
+    }
 }
