@@ -247,13 +247,19 @@ Pattern 8 -
 using namespace std; 
 
 void print8(int n){
+
+    //- Used for space
     for(int i=0; i<n; i++){
         for(int j=0; j<i; j++){
             cout << " ";
         }
+
+        //- Used for stars
         for(int j=0; j<2*n-(2*i+1); j++){
             cout << "*";
         }
+
+        //- Used for space
         for(int j=0; j<i; j++){
             cout << " ";
         }
