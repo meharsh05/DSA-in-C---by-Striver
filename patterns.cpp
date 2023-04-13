@@ -188,3 +188,48 @@ int main(){
         print6(n);
     }
 }
+
+/*
+Pattern 7 - 
+                   *
+                 * * *
+               * * * * * 
+             * * * * * * *    
+            * * * * * * * * *
+*/
+
+#include<iostream>
+using namespace std; 
+
+void print7(int n){
+    for(int i=0; i<n; i++){
+        
+        //- For space
+        for(int j=0; j<n-i-1; j++){
+            cout << " ";
+        }
+        
+        //- For Stars
+        for(int j=0; j<2*i+1; j++){
+            cout << "*";
+        }
+        
+        //- For space
+        for(int j=0; j<n-i-1; j++){
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
+
+int main(){
+    int t;
+    cout << "Enter the value for test cases: ";
+    cin>>t;
+    
+    for(int i=0; i<t; i++){
+        int n;
+        cin>>n;
+        print7(n);
+    }
+}
