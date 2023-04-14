@@ -1,30 +1,12 @@
 #include<iostream>
 using namespace std; 
 
-void printa(int n){
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n-i-1; j++){
-            cout << " ";
-        }
-        for(int j=0; j<2*i+1; j++){
+void print10(int n){
+    for(int i=1; i<=2*n-1; i++){
+        int stars = i;
+        if(i > n) stars = 2*n-i;
+        for(int j=1; j<=stars; j++){
             cout << "*";
-        }
-        for(int j=0; j<n-i-1; j++){
-            cout << " ";
-        }
-        cout << endl;
-    }
-}
-void printb(int n){
-    for(int i=0; i<n; i++){
-        for(int j=0; j<i; j++){
-            cout << " ";
-        }
-        for(int j=0; j<2*n-(2*i+1); j++){
-            cout << "*";
-        }
-        for(int j=0; j<i; j++){
-            cout << " ";
         }
         cout << endl;
     }
@@ -32,13 +14,12 @@ void printb(int n){
 
 int main(){
     int t;
-    cout << "Enter the value for test cases: ";
+    cout << "Enter the value for test cases:";
     cin>>t;
 
     for(int i=0; i<t; i++){
-        int n;
+        int n; 
         cin>>n;
-        printa(n);
-        printb(n);
+        print10(n);
     }
 }
